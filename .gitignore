@@ -1,3 +1,13 @@
+# CV Builder - compiled PDFs and user source CVs
+output/**/*.pdf
+data/
+
+# LaTeX auxiliary files
+*.aux
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]

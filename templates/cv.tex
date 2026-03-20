@@ -1,0 +1,70 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[margin=0.7in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{fontenc}
+\usepackage{parskip}
+
+% Colors
+\definecolor{primary}{HTML}{2b2b2b}
+\definecolor{accent}{HTML}{444444}
+
+% Section formatting
+\titleformat{\section}{\large\bfseries\color{primary}}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{8pt}{4pt}
+
+% Remove page numbers
+\pagestyle{empty}
+
+% Tight lists
+\setlist[itemize]{nosep, leftmargin=1.5em, label=\textbullet}
+
+% Hyperlink style
+\hypersetup{colorlinks=true, linkcolor=accent, urlcolor=accent}
+
+\begin{document}
+
+% === HEADER ===
+\begin{center}
+    {\LARGE\bfseries FULL NAME} \\[4pt]
+    Location \quad\textbar\quad
+    \href{mailto:email@example.com}{email@example.com} \quad\textbar\quad
+    Phone \\[2pt]
+    \href{https://linkedin.com/in/username}{LinkedIn} \quad\textbar\quad
+    \href{https://github.com/username}{GitHub}
+\end{center}
+
+% === SUMMARY ===
+\section{Summary}
+% A 2-3 sentence professional summary tailored to the target role.
+
+% === EXPERIENCE ===
+\section{Experience}
+
+\textbf{Job Title} \hfill \textit{Start -- End} \\
+\textit{Company Name} \hfill Location
+\begin{itemize}
+    \item Accomplishment with quantified impact
+    \item Another accomplishment
+\end{itemize}
+
+\vspace{4pt}
+
+% Repeat for additional roles
+
+% === EDUCATION ===
+\section{Education}
+
+\textbf{Degree} \hfill \textit{Year -- Year} \\
+\textit{Institution} \hfill Location
+
+% === SKILLS ===
+\section{Skills}
+\textbf{Languages:} Skill1, Skill2, Skill3 \\
+\textbf{Frameworks:} Framework1, Framework2 \\
+\textbf{Tools:} Tool1, Tool2, Tool3
+
+\end{document}
